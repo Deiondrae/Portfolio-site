@@ -13,6 +13,19 @@ body {
     color: var(--secondary-color);
     background-color: var();
 }
+.section-title {
+    border-right: 3px solid var(--secondary-color);
+    padding: 10px;
+    width: 15%;
+    margin: 30px;
+    text-align: right;
+    font-size: 1.55vw;  
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /* Header style start */
 header {
     padding: 20px 35px;
@@ -46,33 +59,35 @@ header nav ul li a {
 /* End of header style */
 /*Title style start */
 /*about me style start */
-.about-me, #contact-me, #work {
-    
-}
 .about-me p {
     padding: 5px;
     line-height: 1.5;
     padding: 10px;
     margin-left: 15px;
     font-size: .70vw;
+    align-items: center;
 }
 /*about me style end*/
 /*work style start */
-.work article{
-    flex: 1;
+img {
+    width: 600px;
+    height: 300px;
+    opacity:80%;
 }
-.run-buddy{
-    position: absolute;
-    bottom: 100px;
-}
-.section-title {
-    border-right: 3px solid var(--secondary-color);
-    padding: 10px;
-    width: 15%;
-    margin: 30px;
-    text-align: right;
-}
-.flex-row {
+.contact-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 80%;
+    align-items: center;
+    font-size: .70vw;
+}
+
+.portfolio-images {
+    width: 80%;
+    min-width: 0;
+}
+img:first-child {
+    width: 1200;
+    height: 300;
 }
