@@ -2,6 +2,7 @@
     --primary-color: #545e75;
     --secondary-color: #304d6d;
     --tertiary-color: #82a0bc;
+    --quarternary-color: #a7cced;
 }
 * {
     margin: 0;
@@ -11,7 +12,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--secondary-color);
-    background-color: var();
+    background-color: var(--quarternary-color);
 }
 .section-title {
     border-right: 3px solid var(--secondary-color);
@@ -25,6 +26,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 150px;
 }
 /* Header style start */
 header {
@@ -59,35 +61,44 @@ header nav ul li a {
 /* End of header style */
 /*Title style start */
 /*about me style start */
+.about-me {
+    align-items: center;
+}
 .about-me p {
     padding: 5px;
-    line-height: 1.5;
-    padding: 10px;
-    margin-left: 15px;
-    font-size: .70vw;
-    align-items: center;
+    flex: 1;
+    font-size: .7vw;
 }
 /*about me style end*/
 /*work style start */
 img {
-    width: 600px;
-    height: 300px;
-    opacity:80%;
+    min-height: 0;
+    min-width: 0;
+    opacity: 80%;
 }
 .contact-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1 0 80%;
+    flex: 1;
     align-items: center;
-    font-size: .70vw;
+    font-size: 0.7vw;
 }
-
 .portfolio-images {
     width: 80%;
     min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
 }
-img:first-child {
-    width: 1200;
-    height: 300;
+.image {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+}
+.image:first-child {
+    width: 100%;
+    display: flex;
 }
