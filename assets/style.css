@@ -13,6 +13,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--secondary-color);
     background-color: var(--quarternary-color);
+    overflow: auto;
 }
 .section-title {
     border-right: 3px solid var(--secondary-color);
@@ -66,7 +67,7 @@ header nav ul li a {
 }
 .about-me p {
     padding: 5px;
-    flex: 1;
+    flex: 1 10;
     font-size: .7vw;
 }
 /*about me style end*/
@@ -76,27 +77,31 @@ img {
     min-width: 0;
     opacity: 80%;
 }
+img:hover {
+    opacity: 1;
+}
 .contact-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1;
+    flex: 1 10;
     align-items: center;
     font-size: 0.7vw;
 }
 .portfolio-images {
     width: 80%;
+    margin: 0;
     min-width: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 .image {
     width: 50%;
     display: flex;
-    padding: 15px;
+    padding: 10px;
 }
 .image:first-child {
     width: 100%;
