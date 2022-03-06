@@ -12,7 +12,6 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--secondary-color);
-    background-color: var(--quarternary-color);
     overflow: auto;
 }
 .section-title {
@@ -99,23 +98,30 @@ img:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
+    position: relative;
 }
 .portfolio-images img {
     width: 100%;
 }
 .image {
-    width: 50%;
+    width: 49%;
     display: flex;
-    padding: 10px;
+    margin: 1px;
     position: relative;
+    border: 3px solid var(--primary-color);
 }
 .image:first-child {
     width: 100%;
     display: flex;
 
 }
-.text {
+.project-title {
     position: absolute;
     bottom: 25px;
-    
+    color: black;
+    font-size: 1.5vw;
+    line-height: 1.1;
+    background-color: var(--quarternary-color);
+    z-index: 100;
+    border: 3px solid var(--primary-color);
 }
