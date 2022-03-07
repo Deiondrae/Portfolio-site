@@ -20,7 +20,7 @@ body {
     width: 15%;
     margin: 30px;
     text-align: right;
-    font-size: 1.55vw;  
+    font-size: 2.0vw;  
 }
 .flex-row {
     display: flex;
@@ -74,6 +74,10 @@ img {
     min-height: 0;
     min-width: 0;
     opacity: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
 }
 img:hover {
     opacity: 1;
@@ -99,28 +103,40 @@ img:hover {
     align-content: flex-start;
     position: relative;
 }
-.portfolio-images-section img {
-    width: 100%;
+.portfolio-images-section article {
+    height: 100px;
+}
+.portfolio-images-section article:first-child {
+    height: 200px;
 }
 .project-image {
     width: 49%;
-    display: flex;
     margin: 1px;
     position: relative;
-    border: 10px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
 }
+
 .project-image:first-child {
     width: 100%;
-    display: flex;
-
 }
 .project-title {
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     color: black;
-    font-size: 1.5vw;
+    font-size: large;
     line-height: 1.1;
     background-color: var(--quarternary-color);
     z-index: 100;
-    border: 4px solid var(--primary-color);
+}
+.language {
+    font-size:x-small;
+}
+/*media styles*/
+@media screen and (max-width: 1500px) {
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 100;
+    }
 }
