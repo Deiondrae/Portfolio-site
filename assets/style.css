@@ -59,7 +59,6 @@ header nav ul li a {
     font-size: 1.25vw;
 }
 /* End of header style */
-/*Title style start */
 /*about me style start */
 .about-me {
     align-items: center;
@@ -88,7 +87,7 @@ img:hover {
     font-size: 0.7vw;
     padding: 20px;
 }
-.portfolio-images {
+.portfolio-images-section {
     width: 80%;
     margin: 0;
     min-width: 0;
@@ -100,17 +99,17 @@ img:hover {
     align-content: flex-start;
     position: relative;
 }
-.portfolio-images img {
+.portfolio-images-section img {
     width: 100%;
 }
-.image {
+.project-image {
     width: 49%;
     display: flex;
     margin: 1px;
     position: relative;
-    border: 3px solid var(--primary-color);
+    border: 10px solid var(--primary-color);
 }
-.image:first-child {
+.project-image:first-child {
     width: 100%;
     display: flex;
 
@@ -123,5 +122,5 @@ img:hover {
     line-height: 1.1;
     background-color: var(--quarternary-color);
     z-index: 100;
-    border: 3px solid var(--primary-color);
+    border: 4px solid var(--primary-color);
 }
