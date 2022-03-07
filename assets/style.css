@@ -66,7 +66,7 @@ header nav ul li a {
 .about-me p {
     padding: 5px;
     flex: 1 10;
-    font-size: .7vw;
+    font-size: .9vw;
 }
 /*about me style end*/
 /*work style start */
@@ -133,10 +133,46 @@ img:hover {
 }
 /*media styles*/
 @media screen and (max-width: 1500px) {
+    header nav ul li a {
+        font-size: 2.0vw;
+    }
     .flex-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 100;
+        margin: 0 40px;
+    }
+    .section-title {
+        font-size: 3.0vw;  
+    }
+    .about-me p {
+        font-size: 1.1vw;
+        line-height: 1.1;
+    }
+    .portfolio-images-section {
+        width: 70%;
+    }
+    .contact-content {
+        font-size: 1.5vw;
+        padding: 20px;
+    }
+    .project-title {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:768px) {
+    header nav ul li a {
+        font-size: 2.25vw;
+    }
+    .about-me p {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:575px) {
+    .portfolio-images-section {
+        width: 70%;
+    }
+    .section-title {
+        width: 17%;
+    }
+    .about-me p {
+        font-size: 2.5vw;
     }
 }
