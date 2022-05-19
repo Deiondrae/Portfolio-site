@@ -1,2 +1,2 @@
 # Portfolio-site
-A portfolio of deployed projects
+First attempt at a portfolio of deployed projects used for practice of HTML and CSS
